@@ -1,0 +1,15 @@
+[package]
+name = "solana-contract"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+borsh = { version = "1.5.1", features = ["derive"] }
+solana-program = "2.0.9"
+
+[dependencies.solana-contract-derive]
+path = "./solana-contract-derive"
+version = "0.1.0"
+
+[workspace]
+members = ["solana-contract-derive", "simple_program"]
